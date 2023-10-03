@@ -1,9 +1,9 @@
 ## Mouse Mover for Moyu
 
-__MacOS applicable__
+__MacOS applicable Only__
 
 * Download the repo
 * Select App - Mover
-  * Select python location
-  * Select mover_beta.py location
-* Select distance and max_time on GUI
+  * Select python (3.8+) location
+  * Select mover_beta.py location dir
+* Choose duration of each move and max_time on GUI
