@@ -12,3 +12,8 @@ __MacOS applicable Only__
 
 Note:
 1. You might need to get Accessibility to the app
+  * Open System Preferences. Go to Security & Privacy.
+  * Click on the Privacy tab.
+  * In the left pane, scroll down and select Accessibility. You might need to click the lock icon at the bottom left and enter your password to make changes.
+  * Choose the Mover App.
+  * Restart the app and rerun

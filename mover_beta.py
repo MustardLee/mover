@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 import os
+# Set the current working directory to the script's directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 import logging
 logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
 logging.debug('This message will be written to the log file.')
 
-# Set the current working directory to the script's directory
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 import subprocess
 import sys
 def install_packages():
