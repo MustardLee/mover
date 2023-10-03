@@ -8,3 +8,7 @@ __MacOS applicable Only__
   * Select mover_beta.py location dir
 * Choose duration of each move and max_time on GUI
   * Double click or move mouse to conner to stop
+
+
+Note:
+1. You might need to get Accessibility to the app

@@ -1,15 +1,13 @@
+#!/usr/bin/env python3
 import os
 
 # Set the current working directory to the script's directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 import subprocess
 import sys
-
 def install_packages():
     """Install required packages."""
     subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-
 try:
     import pyautogui
     from pynput import mouse
