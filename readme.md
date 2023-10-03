@@ -14,6 +14,6 @@ Note:
 1. You might need to get ```Accessibility``` & ```Input Monitoring``` to the app
   * Open System Preferences. Go to Security & Privacy.
   * Click on the Privacy tab.
-  * In the left pane, scroll down and select ```Accessibility```. You might need to click the lock icon at the bottom left and enter your password to make changes. Same practive for ```Input Monitoring```.
+  * In the left pane, scroll down and select ```Accessibility```. You might need to click the lock icon at the bottom left and enter your password to make changes. Same practice for ```Input Monitoring```.
   * Choose the Mover App.
   * Restart the app and rerun
