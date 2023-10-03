@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>property pythonPath : ""property scriptPath : ""on run {input, parameters}		if pythonPath is "" then		set pythonPath to text returned of (display dialog "Enter the path to Python3:" default answer "/usr/local/bin/python3")	end if		if scriptPath is "" then		-- Always prompt the user to select the file		set filePath to choose file with prompt "Select the mover_beta.py script:" of type {"py"}		set scriptPath to POSIX path of filePath	end if			try		do shell script pythonPath &amp; " " &amp; scriptPath	on error errMsg		display dialog errMsg	end try		return inputend run</string>
+					<string>property pythonPath : ""property scriptPath : ""on run {input, parameters}	log "Script started"		if pythonPath is "" then		set pythonPath to text returned of (display dialog "Enter the path to Python3:" default answer "/usr/local/bin/python3")	end if		if scriptPath is "" then		-- Always prompt the user to select the file		set filePath to choose file with prompt "Select the mover_beta.py script:" of type {"py"}		set scriptPath to POSIX path of filePath	end if			try		log "Running Python script now"		do shell script pythonPath &amp; " " &amp; scriptPath	on error errMsg		display dialog errMsg	end try		return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>4F02DA7E-1C2C-4BDD-BF09-5FD7CCB19F41</string>
+				<string>2932B2E1-5B44-4A72-BFDE-759B022049F2</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>335EAD0A-0688-4701-85CD-5530FF972E53</string>
+				<string>2E0E3309-2865-44DA-A6D1-30CBE109E1E8</string>
 				<key>UUID</key>
-				<string>3449E45A-B445-496E-9615-FB896E986C4D</string>
+				<string>90ED75AC-C40C-47C3-95D6-446105A13B73</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -102,10 +102,12 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:607.000000</string>
+				<string>309.000000:315.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
