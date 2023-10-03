@@ -1,5 +1,7 @@
 ## Mouse Mover for Moyu
 
+__MacOS applicable__
+
 * Download the repo
 * Select App - Mover
   * Select python location
