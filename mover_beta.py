@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import os
 
+import logging
+logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
+logging.debug('This message will be written to the log file.')
+
 # Set the current working directory to the script's directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 import subprocess
@@ -16,7 +20,6 @@ except ImportError:
     # Now, after installing, import again
     import pyautogui
     from pynput import mouse
-
 
 import pyautogui
 import time
