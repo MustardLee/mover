@@ -98,6 +98,7 @@ if __name__ == "__main__":
     max_time_entry = tk.Entry(root)
     max_time_entry.insert(0, "30")
     max_time_entry.pack(pady=5)
+    max_time_entry.bind("<Return>", lambda event=None: start_movement())  # Bind Enter key
     
     start_button = tk.Button(root, text="Start Movement", command=start_movement)
     start_button.pack(pady=20)

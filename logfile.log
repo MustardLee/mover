@@ -67,3 +67,8 @@ DEBUG:root:This message will be written to the log file.
 DEBUG:root:This message will be written to the log file.
 WARNING:pynput.mouse.Listener:This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
 DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+WARNING:pynput.mouse.Listener:This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
