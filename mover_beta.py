@@ -59,8 +59,11 @@ def move_mouse_randomly(duration=1, max_time=30):
         time.sleep(duration)  # Wait for the specified duration before the next move
 
 def start_movement():
+    global running
     duration = float(duration_entry.get())
     max_time = int(max_time_entry.get())
+    
+    running = True
     
     # Start a mouse listener in a separate thread
     listener = mouse.Listener(on_click=on_click)
