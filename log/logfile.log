@@ -72,3 +72,14 @@ WARNING:pynput.mouse.Listener:This process is not trusted! Input event monitorin
 DEBUG:root:This message will be written to the log file.
 DEBUG:root:This message will be written to the log file.
 DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:This message will be written to the log file.
+DEBUG:root:Mover Start at {current_time}
+DEBUG:root:Moving Start at {current_time}
+DEBUG:root:Moving Stop at {current_time}
+DEBUG:root:Mover Start at 2023-10-05 11:25:10
+DEBUG:root:Moving Start at 2023-10-05 11:25:12
+DEBUG:root:Moving Stop at 2023-10-05 11:25:17

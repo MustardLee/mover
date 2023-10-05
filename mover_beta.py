@@ -4,8 +4,10 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 import logging
-logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
-logging.debug('This message will be written to the log file.')
+import datetime
+logging.basicConfig(filename='log/logfile.log', level=logging.DEBUG)
+current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+logging.debug(f'Mover Start at {current_time}')
 
 
 import subprocess
@@ -67,11 +69,15 @@ def start_movement():
     
     # Start a mouse listener in a separate thread
     listener = mouse.Listener(on_click=on_click)
+    current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logging.debug(f'Moving Start at {current_time}')
     listener.start()
     
     move_mouse_randomly(duration, max_time)
     
     listener.stop()
+    current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logging.debug(f'Moving Stop at {current_time}')
 
 # if __name__ == "__main__":
 #     time.sleep(5)  # Sleep for 5 seconds before starting
